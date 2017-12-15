@@ -1,0 +1,20 @@
+server: "hub-cloud.browserstack.com"
+user: "<BROWSERSTACK_USERNAME>"
+key: "<BROWSERSTACK_ACCESS_KEY>"
+
+common_caps:
+  "build": "rspec-browserstack"
+  "browserstack.debug": true
+  "app": "bs://<app_hashed_id>"
+  "realMobile": "true"
+  "name": "parallel_ios"
+
+appium_caps:
+  -
+    "device": "iPhone 7"
+  -
+    "device": "iPhone 7 Plus"
+  -
+    "device": "iPhone 8"
+  -
+    "device": "iPhone 8 Plus"

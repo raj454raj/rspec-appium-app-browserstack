@@ -1,0 +1,23 @@
+server: "hub-cloud.browserstack.com"
+user: "<BROWSERSTACK_USERNAME>"
+key: "<BROWSERSTACK_ACCESS_KEY>"
+
+common_caps:
+  "build": "rspec-browserstack"
+  "browserstack.debug": true
+  "app": "bs://<app_hashed_id>"
+  "realMobile": "true"
+  "name": "parallel_android"
+
+appium_caps:
+  -
+    "device": "Google Pixel"
+
+  -
+    "device": "Samsung Galaxy S7"
+
+  -
+    "device": "Samsung Galaxy S6"
+
+  -
+    "device": "Google Nexus 9"

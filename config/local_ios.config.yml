@@ -1,0 +1,15 @@
+server: "hub-cloud.browserstack.com"
+user: "<BROWSERSTACK_USERNAME>"
+key: "<BROWSERSTACK_ACCESS_KEY>"
+
+common_caps:
+  "build": "rspec-appium-browserstack"
+  "browserstack.debug": true
+  "browserstack.local": true
+
+appium_caps:
+  -
+    "name": "single_test"
+    "device": "iPhone 7 Plus"
+    "realMobile": "true"
+    "app": "bs://<app_hashed_id>"
